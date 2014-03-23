@@ -1,16 +1,25 @@
 ---
 layout: post
-title: "Taint tracking in Bitcoin"
+title: "Taint tracking cash"
 category: 
 tags: []
 ---
 
-Over on Hacking Distributed, Emin Gün Sirer have a fantastic blog post
-on [Cash-Boycotts: How to Use Bitcoins for Social
-Change](http://hackingdistributed.com/2013/11/21/bitcoin-cash-boycott/). The
-post starts by discussing countless failed consumer boycotts:
+Before the word "bitcoin" turns you off from this entire post, let me
+emphasize that this isn't about bitcoin, but about the deep economic
+implications of adding one small feature to cash. Bitcoin has that
+property, and it's [so hot right
+now](http://www.youtube.com/watch?v=CV_hDyfmEw4), so I'm shamelessly
+riding that bandwagon. 
 
-> ... oycotts can't work unless a significant fraction of the
+Over on Hacking Distributed, [Emin Gün
+Sirer](http://www.cs.cornell.edu/people/egs/) has a fantastic blog
+post on [Cash-Boycotts: How to Use Bitcoins for Social
+Change](http://hackingdistributed.com/2013/11/21/bitcoin-cash-boycott/). You
+really should read it in it's entirety. The post starts by discussing
+countless failed consumer boycotts:
+
+> ... boycotts can't work unless a significant fraction of the
 > consumers are involved. Let's face it, demand is mostly inflexible
 > -- when your kid is screaming for that Tickle-Me-Elmo, you'll buy
 > it, even if it means that someone else's kid in Bengladesh is
@@ -32,9 +41,9 @@ post starts by discussing countless failed consumer boycotts:
 It then discusses how bitcoin's are different from cash because each
 bitcoin encodes an entire *transaction history* of where the bitcoin
 has been. This makes for a novel kind of boycott: tainted money, which
-allows you to taint a piece of currency forever after: it's not just
+allows you to taint a piece of currency forever after. It's not just
 Koch products you boycott, but any dollar bill that ever went through
-the Kochtopus.
+the Kochtopus:
 
 > So, the Pultars had a crazy idea: why not, instead of boycotting a
 > company's products, boycott their cash flow? For this, all we need
@@ -45,23 +54,76 @@ the Kochtopus.
 
 I encourage you to read the entire article; it's a great blog post
 about boycotts and the social processes around them, even if you don't
-care about bitcoin. Unfortunately, even these boycotts are doomed to
-fail.
+care about bitcoin. Unfortunately, Gün Sirer's bitcoin boycotts are
+doomed to fail. To get to that point, I'm going to make a diversion to
+talk about black money.
 
 Black Money
 ----
 
+Black money is the concept of "off the books" cash holdings, namely,
+money that's tainted by past transactions in the [black
+market](http://en.wikipedia.org/wiki/Black_market). Many countries
+have varying sizes of black markets (there has been a movement to
+normalize them as "underground economies", reflecting the fact that
+they are entire economies, not just narrow markets). If you are from
+the United States or Northern Europe, the local underground economy is
+relatively small: picking up Mexican day laborers outside a Home Depot
+and paying them in cash, or restaurant servers underreporting
+tips. This is small change. But in places like the south of Italy or
+in developing countries like India, states are weak and cannot track
+all transactions or enforce tax collection. But even weak states can
+be strong in certain sectors of the economy and tax officials would
+start asking questions if money crops up without legitimate
+sources. Thus we get the problem of [black
+money](http://en.wikipedia.org/wiki/Indian_black_money): sometimes you
+want to trade your ill gotten gains for stuff, but your money isn't
+good for it. Wouldn't it be nice to clean that money up?
+
+In India, there is a parallel off-the-books banking system called the
+[Hundi](http://en.wikipedia.org/wiki/Hundi) system. It works much like
+the [Hawala](http://en.wikipedia.org/wiki/Hawala) international shadow
+banking system (and is even integrated with for cross-border
+transactions) --- you go up to a trusted merchant and hand them a
+suitcase of cash. The bills are counted, everyone drinks some chai,
+and agrees upon an interest rate and duration. You rest easy because
+the Hundi would *never* screw you. And if you want money sent to your
+cousin who has fallen ill in Calcutta, he'll have it arranged. Hundi
+merchants operate banks. And with banks come interest rates, wire
+transfers, loans, everything.
+
+But you *still* can't mix the two monies! Now you've got two bank
+accounts, two balances, two interest rates, and two ledgers. Well,
+that's what you get for dealing with the shady side of the
+economy... Surely there must be a way...?
+
+The first way is to *launder* black money into white. This takes the
+form of masquerading as a legitimate business transaction, with a
+little something on the side. I sell you something innocent (like a
+car) for a larger than usual amount of money. I also tack on some
+black money (to make up the difference). So I've given you black
+money, but you've given me white. And you can also account it as white
+money on your ledger. Technically there is still a paper trail (where
+did you get such an expensive car to sell?) but this is where the weak
+state comes in: the Indian equivalent of the IRS doesn't have the
+resources to follow up such long trails.
+
+Laundering money comes at a high cost: the buyer still has to pay
+capital gains taxes on your "car sale", so that will be factored into
+the price. Presumably you only resort to such tactics during a
+liquidity crisis... Much easier to horde the black money and spend it
+on groceries and taxis and slowly dilute it out. Besides, there's the
+whole deal with the cars. Who the hell wants an extra car sitting on
+their driveway?
+
+The second easier way to get rid of black money is to *tumble* black
+money with white. Tumbling requires executing a simultaneous
+double-sided contract (one legal, one underground). We exchange white
+assets and black assets. The trouble is... what 
 
 
-Some related work that you're missing is in the parallel cash
-economies of "black money"
-(http://en.wikipedia.org/wiki/Indian_black_money) that are prevalent
-in third world countries where corruption is a much larger part of the
-economy (to the point where it has it's own separate accounting
-system). In short, black money is money that derives from the black
-market, and has not been declared for income tax purposes. Oftentimes,
-when homes are sold, for example, there are two cash transactions that
-take place. One "white money" transaction that keeps the capital gains
+
+One "white money" transaction that keeps the capital gains
 low, and the remaining in black. The white money is regular money, but
 the black money needs to be disposed off. There is an implicit lower
 valuation on the black money, since it cannot be used for all purposes
