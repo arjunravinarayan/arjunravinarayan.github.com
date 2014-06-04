@@ -8,22 +8,22 @@ valuations. This is because it is an easy, reductive narrative to
 push. Every company can be reduced to a single number: its total
 market value. 
 
-Why are valuations a red herring? It's because startups raise money in
-more complex contracts than public corporations do. Calculating the
-market value of a public corporation is simple: it is the total number
-of stock issued by the company, multiplied by the share price. Taking
-the example of IBM, its current share price at the time of writing is
-$184.37 per share. There are slightly over 1.01 billion shares
-issued. So the company is worth 186 billion as a whole. Startup
-valuation calculations take that same theory and do a similar
-projection: it is the total number of stock issued by a startup
-multiplied by the price paid by the latest investors to buy some stock.
+This is wrong because startups raise money using more complex
+contracts than public corporations do. Calculating the market value of
+a public corporation is simple: it is the total number of stock issued
+by the company, multiplied by the share price. Taking the example of
+IBM, its current share price at the time of writing is $184.37 per
+share. There are slightly over 1.01 billion shares issued. So the
+company is worth 186 billion as a whole. Startup valuation
+calculations take that same theory and do a similar projection: it is
+the total number of stock issued by a startup multiplied by the price
+paid by the latest investors to buy some stock.
 
 Now incidentally, Some commentators object to doing this math because
 there isn't sufficient liquidity to justify projecting out, especially
-when the money is raised on a small slice of equity. But that's a red
-herring. You'd also get the same issues if you tried to dump all the
-outstanding stock of a large liquid company like IBM. The price of
+when the money is raised on a small slice of equity. But that's not
+quite right. You'd also get the same issues if you tried to dump all
+the outstanding stock of a large liquid company like IBM. The price of
 184.37 was calculated based on the last clearing trade for a single
 share of IBM stock at closing today. If you happened to want to sell 1
 billion of those shares, you'd probably find that the price would come
