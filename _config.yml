@@ -31,7 +31,7 @@ timezone:    America/NewYork
 future:      true
 pygments:    true
 markdown:    kramdown
-permalink:   none
+permalink:   date
 
 kramdown:
   auto_ids: true
